@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter, Mail, ArrowUp } from 'lucide-react';
+import { Mail, ArrowUp, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -15,9 +15,8 @@ const Footer = () => {
   const company = ['About Us', 'Careers', 'Blog', 'Contact'];
 
   const socialLinks = [
-    { icon: <Twitter size={20} />, href: '#', label: 'Twitter' },
-    { icon: <Linkedin size={20} />, href: '#', label: 'LinkedIn' },
-    { icon: <Github size={20} />, href: '#', label: 'GitHub' },
+    { icon: <ExternalLink size={20} />, href: '#', label: 'Twitter' },
+    { icon: <ExternalLink size={20} />, href: '#', label: 'LinkedIn' },
     { icon: <Mail size={20} />, href: '#contact', label: 'Email' },
   ];
 

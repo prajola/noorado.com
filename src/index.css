@@ -1,55 +1,54 @@
+@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
 
-:root {
   --color-brand-orange: #FF6B35;
   --color-brand-orange-dark: #FF8500;
-  --color-bg-dark: #000000;
-  --color-bg-dark-alt: #0a0a0a;
-  --color-text-primary: #ffffff;
-  --color-text-secondary: #a0a0a0;
 }
 
-@layer base {
-  body {
-    @apply bg-black text-white font-sans antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Space Grotesk', system-ui, sans-serif;
-    @apply font-bold;
-  }
+body {
+  background: #000000;
+  color: #ffffff;
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@layer utilities {
-  .glass-morphism {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-  }
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
 
-  .gradient-text {
-    @apply bg-gradient-to-r from-brand-orange to-brand-orange-dark bg-clip-text text-transparent;
-  }
+/* Custom utilities */
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-  .orange-glow {
-    box-shadow: 0 0 30px rgba(255, 107, 53, 0.4);
-  }
+.gradient-text {
+  background: linear-gradient(to right, var(--color-brand-orange), var(--color-brand-orange-dark));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 
-  .hover-lift {
-    @apply transition-transform duration-300;
-  }
+.orange-glow {
+  box-shadow: 0 0 30px rgba(255, 107, 53, 0.4);
+}
 
-  .hover-lift:hover {
-    @apply -translate-y-2;
-  }
+.hover-lift {
+  transition: transform 300ms;
+}
+
+.hover-lift:hover {
+  transform: translateY(-0.5rem);
 }
 
 /* Smooth scrolling */
