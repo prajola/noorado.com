@@ -8,10 +8,12 @@ import Portfolio from './components/Portfolio';
 import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import MobileOptimizer from './components/MobileOptimizer';
 
 function App() {
   return (
     <div className="min-h-screen bg-black text-white">
+      <MobileOptimizer />
       <Header />
       <main>
         <Hero />
