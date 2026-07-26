@@ -55,16 +55,19 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-block glass-morphism px-4 py-2 rounded-full mb-4">
-            <span className="text-brand-orange text-sm font-semibold">• Contact</span>
+          <div className="inline-block glass-morphism px-6 py-3 rounded-full mb-4">
+            <span className="text-brand-orange text-sm font-semibold">• Let's Talk</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-            Let's Build
+            Tell Us Your
             <br />
-            <span className="gradient-text">Something Bold</span>
+            <span className="gradient-text">Requirements</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            Ready to scale your brand? We don't just build software—we create experiences that drive measurable impact.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
+            Every great software starts with understanding your needs. Share your vision and we'll build it exactly as you imagine.
+          </p>
+          <p className="text-lg text-brand-orange font-semibold">
+            Free consultation. No obligations. Just honest advice.
           </p>
         </motion.div>
 
@@ -123,16 +126,16 @@ const Contact = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
-                  Message
+                  Your Requirements <span className="text-brand-orange">*</span>
                 </label>
                 <textarea
                   id="message"
                   required
-                  rows={5}
+                  rows={6}
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-brand-orange transition-colors resize-none"
-                  placeholder="Tell us about your project..."
+                  placeholder="Describe what you need... Be as detailed as you like:&#10;• What problem are you solving?&#10;• Who will use this software?&#10;• Any specific features you have in mind?"
                 />
               </div>
 
@@ -140,12 +143,12 @@ const Contact = () => {
                 type="submit"
                 className="w-full px-8 py-4 bg-gradient-to-r from-brand-orange to-brand-orange-dark text-white font-semibold rounded-lg hover:shadow-2xl hover:shadow-brand-orange/50 transition-all duration-300 hover:scale-105 flex items-center justify-center space-x-2"
               >
-                <span>Start Now</span>
+                <span>Share Your Requirements</span>
                 <Send size={20} />
               </button>
 
               <p className="text-sm text-gray-400 text-center">
-                We'll respond within 24 hours. Free consultation included.
+                💬 We'll respond within 24 hours with a free consultation and project roadmap.
               </p>
             </form>
           </motion.div>

@@ -39,13 +39,13 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-block glass-morphism px-4 py-2 rounded-full mb-4">
-            <span className="text-brand-orange text-sm font-semibold">• About Us</span>
+          <div className="inline-block glass-morphism px-6 py-3 rounded-full mb-4">
+            <span className="text-brand-orange text-sm font-semibold">• About Noorado</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-            Hub support peoples from
+            We Build Software That
             <br />
-            <span className="gradient-text">all over the world</span>
+            <span className="gradient-text">Fits Like a Glove</span>
           </h2>
         </motion.div>
 
@@ -60,10 +60,13 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-xl text-gray-300 leading-relaxed">
-              At <span className="gradient-text font-semibold">Noorado</span>, we believe technology should empower, not complicate. For over 15 years, we've partnered with businesses worldwide to deliver transformative IT solutions.
+              At <span className="gradient-text font-semibold">Noorado</span>, we believe every business deserves software built specifically for them. For over 15 years, we've turned unique requirements into powerful custom solutions.
             </p>
             <p className="text-lg text-gray-400 leading-relaxed">
-              Our team of certified experts specializes in cloud architecture, cybersecurity, AI/ML, and digital transformation. We don't just implement technology—we architect solutions that scale with your ambitions.
+              We don't sell packages or templates. We listen to your needs, understand your challenges, and build software from the ground up—tailored precisely to how you work and what you want to achieve.
+            </p>
+            <p className="text-lg text-brand-orange font-semibold">
+              Your vision. Our code. Perfect alignment.
             </p>
             <div className="flex items-center space-x-8 pt-4">
               <div>

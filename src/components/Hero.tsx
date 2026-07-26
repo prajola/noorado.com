@@ -71,9 +71,9 @@ const Hero = () => {
         >
           {/* Badge */}
           <motion.div variants={itemVariants} className="flex justify-center mb-6">
-            <div className="glass-morphism px-4 py-2 rounded-full flex items-center space-x-2 text-sm">
-              <Sparkles size={16} className="text-brand-orange" />
-              <span className="text-gray-300">Transforming Businesses Digitally</span>
+            <div className="glass-morphism px-6 py-3 rounded-full flex items-center space-x-2">
+              <Sparkles size={18} className="text-brand-orange animate-pulse" />
+              <span className="text-white font-semibold">Custom Software Solutions</span>
             </div>
           </motion.div>
 
@@ -82,20 +82,26 @@ const Hero = () => {
             variants={itemVariants}
             className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 leading-tight"
           >
-            We start from{' '}
-            <span className="gradient-text">zero</span>
+            Software Built{' '}
+            <span className="gradient-text">For You</span>
             ,<br />
-            delivering only{' '}
-            <span className="gradient-text">what matters</span>
+            Based on{' '}
+            <span className="gradient-text">Your Requirements</span>
           </motion.h1>
 
           {/* Subheadline */}
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl text-gray-400 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl md:text-2xl text-gray-300 mb-4 max-w-4xl mx-auto leading-relaxed"
           >
-            Elevate your business value through custom software development, cloud solutions,
-            cybersecurity, and cutting-edge consulting services.
+            We don't believe in one-size-fits-all. Every business is unique, and so should be your software.
+          </motion.p>
+
+          <motion.p
+            variants={itemVariants}
+            className="text-lg md:text-xl text-brand-orange font-semibold mb-8 max-w-3xl mx-auto"
+          >
+            Tell us what you need. We'll build it exactly the way you envision.
           </motion.p>
 
           {/* Rating */}

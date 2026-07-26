@@ -1,47 +1,47 @@
 import { motion } from 'framer-motion';
-import { Cloud, Shield, Zap, Brain, GitBranch, BarChart3, Boxes, Cog } from 'lucide-react';
+import { Monitor, Smartphone, Globe, Database, Layers, Code, Settings, Package } from 'lucide-react';
 
 const Services = () => {
   const services = [
     {
-      icon: <Cloud size={32} />,
-      title: 'Cloud Computing',
-      description: 'Migrate to cloud infrastructure with AWS, Azure, or Google Cloud for scalability and performance.',
+      icon: <Code size={32} />,
+      title: 'Custom Web Applications',
+      description: 'Tailored web platforms built from scratch to match your exact business requirements and workflows.',
     },
     {
-      icon: <Shield size={32} />,
-      title: 'Cybersecurity',
-      description: 'Protect your digital assets with comprehensive security audits, compliance, and threat management.',
+      icon: <Smartphone size={32} />,
+      title: 'Mobile App Development',
+      description: 'Native iOS and Android apps designed specifically for your users, with seamless performance.',
     },
     {
-      icon: <Zap size={32} />,
-      title: 'Digital Transformation',
-      description: 'Modernize your business processes with cutting-edge technologies and strategic consulting.',
+      icon: <Monitor size={32} />,
+      title: 'Enterprise Software',
+      description: 'Scalable enterprise solutions that grow with your business, built to your specifications.',
     },
     {
-      icon: <Brain size={32} />,
-      title: 'AI & Machine Learning',
-      description: 'Leverage intelligent automation and predictive analytics to gain competitive advantages.',
+      icon: <Database size={32} />,
+      title: 'Custom APIs & Integrations',
+      description: 'Connect your systems seamlessly with custom-built APIs and third-party integrations.',
     },
     {
-      icon: <GitBranch size={32} />,
-      title: 'DevOps & Automation',
-      description: 'Streamline development workflows with CI/CD pipelines and infrastructure as code.',
+      icon: <Globe size={32} />,
+      title: 'SaaS Product Development',
+      description: 'Full-stack SaaS platforms designed and built to bring your product vision to market.',
     },
     {
-      icon: <BarChart3 size={32} />,
-      title: 'Data Analytics',
-      description: 'Transform raw data into actionable insights with advanced analytics and visualization.',
+      icon: <Layers size={32} />,
+      title: 'Cloud-Native Solutions',
+      description: 'Modern cloud applications leveraging AWS, Azure, or Google Cloud for maximum scalability.',
     },
     {
-      icon: <Boxes size={32} />,
-      title: 'Legacy Modernization',
-      description: 'Upgrade outdated systems to modern architectures without disrupting operations.',
+      icon: <Settings size={32} />,
+      title: 'Process Automation',
+      description: 'Custom automation tools that streamline your operations and eliminate manual workflows.',
     },
     {
-      icon: <Cog size={32} />,
-      title: 'IT Strategy',
-      description: 'Develop comprehensive technology roadmaps aligned with your business objectives.',
+      icon: <Package size={32} />,
+      title: 'Legacy System Modernization',
+      description: 'Transform outdated software into modern, efficient systems tailored to current needs.',
     },
   ];
 
@@ -81,19 +81,23 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <div className="inline-block glass-morphism px-4 py-2 rounded-full mb-4">
-            <span className="text-brand-orange text-sm font-semibold">• Portfolio</span>
+          <div className="inline-block glass-morphism px-6 py-3 rounded-full mb-4">
+            <span className="text-brand-orange text-sm font-semibold">• What We Build</span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
-            Explore Our{' '}
-            <span className="gradient-text">Services</span>
+            Custom Solutions{' '}
+            <span className="gradient-text">Built For You</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-            We help businesses elevate their value through custom{' '}
-            <span className="text-white font-semibold">software development</span>,{' '}
-            <span className="text-white font-semibold">product design</span>,{' '}
-            <span className="text-white font-semibold">QA</span> and{' '}
-            <span className="text-white font-semibold">consulting services</span>.
+          <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-4">
+            Every project starts with your requirements. We build custom{' '}
+            <span className="gradient-text font-semibold">software</span>,{' '}
+            <span className="gradient-text font-semibold">web apps</span>,{' '}
+            <span className="gradient-text font-semibold">mobile solutions</span>, and{' '}
+            <span className="gradient-text font-semibold">enterprise systems</span>
+            {' '}— tailored precisely to your needs.
+          </p>
+          <p className="text-lg text-brand-orange font-semibold">
+            No templates. No limitations. Just your vision, perfectly executed.
           </p>
         </motion.div>
 
